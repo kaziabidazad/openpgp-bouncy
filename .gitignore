@@ -1,5 +1,15 @@
 # Compiled class file
 *.class
+*.prefs
+*.metadata
+*.settings
+/.metadata
+/.settings
+/.classpath
+/target/
+/*.project
+*.classpath
+*common.component
 
 # Log file
 *.log
