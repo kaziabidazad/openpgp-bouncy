@@ -1,2 +1,2 @@
 # openpgp-bouncy
-Example of OpenPGP by Bouncy Castle
+Simplified example of OpenPGP by Bouncy Castle
