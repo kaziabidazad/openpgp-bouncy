@@ -69,7 +69,7 @@ public class PGPLargeFileEncryptor {
 	    outputFileStream = new ArmoredOutputStream(outputFileStream);
 	try {
 	    PGPEncryptedDataGenerator encryptedDataGenerator = new PGPEncryptedDataGenerator(
-		    new JcePGPDataEncryptorBuilder(PGPEncryptedData.CAST5).setWithIntegrityPacket(withIntegrityCheck)
+		    new JcePGPDataEncryptorBuilder(PGPEncryptedData.AES_256).setWithIntegrityPacket(withIntegrityCheck)
 			    .setSecureRandom(new SecureRandom()).setProvider("BC"));
 
 	    encryptedDataGenerator.addMethod(new JcePublicKeyKeyEncryptionMethodGenerator(publicKey).setProvider("BC"));
